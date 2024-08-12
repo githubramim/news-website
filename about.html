@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website | Tanvir Bin Faruk Ramim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="images/manu.png" alt="" class="manu-icon" onclick="toggleManu()">
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About Us content  -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-column">
+                <h1>We are the World Largest University</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci reiciendis tempora veritatis iure error numquam, et sunt iste saepe repudiandae sed tempore id officia tenetur totam doloremque quisquam eveniet ullam nulla aspernatur necessitatibus ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae dolorem assumenda asperiores, rem quod. Provident sunt mollitia dolorem harum dolore, eaque sed dicta culpa exercitationem quibusdam illum. Ipsa ipsam non magnam magni natus!</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-column">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer  -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis cupiditate blanditiis <br>
+            voluptate tempore vitae corporis nisi commodi, quod, ad quidem expedita sit.</p>
+
+        <div class="icons">
+            <img src="images/fb-icon (2).png" alt="">
+            <img src="images/twitter-icon (2).png" alt="">
+            <img src="images/instagram-icon.png" alt="">
+            <img src="images/in-icon (2).png" alt="">
+        </div>
+        <p>Made by | <span style="color: #f44336;">Tanvir Bin Faruk Ramim</span></p>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function toggleManu() {
+            // console.log('clicked on show');
+
+            if (navLinks.style.right == "-200px") {
+                navLinks.style.right = "0";
+            }
+            else {
+                navLinks.style.right = "-200px";
+            }
+        }
+    </script>
+</body>
+
+</html>

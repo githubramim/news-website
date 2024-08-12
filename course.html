@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website | Tanvir Bin Faruk Ramim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="images/manu.png" alt="" class="manu-icon" onclick="toggleManu()">
+        </nav>
+
+        <h1>Our Courses</h1>
+    </section>
+
+
+       <!-- course  -->
+       <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ipsum?</p>
+
+        <div class="row">
+            <div class="course-column">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt alias officiis repellat! Eos,
+                    inventore. Quo ad adipisci deleniti voluptates maxime tenetur molestias, voluptatem facere eius
+                    laborum cum voluptatibus doloremque iusto dolores ipsam. Fugiat, dolorum!</p>
+            </div>
+            <div class="course-column">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt alias officiis repellat! Eos,
+                    inventore. Quo ad adipisci deleniti voluptates maxime tenetur molestias, voluptatem facere eius
+                    laborum cum voluptatibus doloremque iusto dolores ipsam. Fugiat, dolorum!</p>
+            </div>
+            <div class="course-column">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt alias officiis repellat! Eos,
+                    inventore. Quo ad adipisci deleniti voluptates maxime tenetur molestias, voluptatem facere eius
+                    laborum cum voluptatibus doloremque iusto dolores ipsam. Fugiat, dolorum!</p>
+            </div>
+        </div>
+    </section>
+    
+
+      <!-- Facilities -->
+      <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, temporibus.</p>
+
+        <div class="row">
+            <div class="facilities-column">
+                <img src="images/library.png" alt="">
+                <h3>World's Best Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ipsa dolore perspiciatis.</p>
+            </div>
+            <div class="facilities-column">
+                <img src="images/basketball.png" alt="">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ipsa dolore perspiciatis.</p>
+            </div>
+            <div class="facilities-column">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ipsa dolore perspiciatis.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer  -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis cupiditate blanditiis <br>
+            voluptate tempore vitae corporis nisi commodi, quod, ad quidem expedita sit.</p>
+
+        <div class="icons">
+            <img src="images/fb-icon (2).png" alt="">
+            <img src="images/twitter-icon (2).png" alt="">
+            <img src="images/instagram-icon.png" alt="">
+            <img src="images/in-icon (2).png" alt="">
+        </div>
+        <p>Made by | <span style="color: #f44336;">Tanvir Bin Faruk Ramim</span></p>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function toggleManu() {
+            // console.log('clicked on show');
+
+            if (navLinks.style.right == "-200px") {
+                navLinks.style.right = "0";
+            }
+            else {
+                navLinks.style.right = "-200px";
+            }
+        }
+    </script>
+</body>
+
+</html>

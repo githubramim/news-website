@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website | Tanvir Bin Faruk Ramim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="images/manu.png" alt="" class="manu-icon" onclick="toggleManu()">
+        </nav>
+
+        <h1>Contact Us</h1>
+    </section>
+
+
+    <section class="location">
+        
+
+
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <!-- icom -->
+                    <span>
+                        <h5>Cox's Bazar Sadar, Cox's Bazar - 4700</h5>
+                        <p>kotli Azad Kashmir</p>
+                    </span>
+                </div>
+                <div>
+                    <!-- icom -->
+                    <span>
+                        <h5>+8801889421708</h5>
+                        <p>Monday to Friday 10AM to 6PM </p>
+                    </span>
+                </div>
+                <div>
+                    <!-- icom -->
+                    <span>
+                        <h5>inboxtotanvirbinfarukramim@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formHandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea  rows="10" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer  -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis cupiditate blanditiis <br>
+            voluptate tempore vitae corporis nisi commodi, quod, ad quidem expedita sit.</p>
+
+        <div class="icons">
+            <img src="images/fb-icon (2).png" alt="">
+            <img src="images/twitter-icon (2).png" alt="">
+            <img src="images/instagram-icon.png" alt="">
+            <img src="images/in-icon (2).png" alt="">
+        </div>
+        <p>Made by | <span style="color: #f44336;">Tanvir Bin Faruk Ramim</span></p>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function toggleManu() {
+            // console.log('clicked on show');
+
+            if (navLinks.style.right == "-200px") {
+                navLinks.style.right = "0";
+            }
+            else {
+                navLinks.style.right = "-200px";
+            }
+        }
+    </script>
+</body>
+
+</html>
